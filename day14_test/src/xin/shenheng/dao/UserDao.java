@@ -1,13 +1,23 @@
 package xin.shenheng.dao;
 
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
 import xin.shenheng.domain.User;
+import xin.shenheng.util.JDBCUtils;
 
-/**
- * 登录方法
- * @param  loginUser 只有用户名和密码
- */
+
 public class UserDao {
+    //声明jdbctemplate对象
+    private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());
     public  User login(User loginUser){
-        return  null;
+        try{
+            String sql = "select * from user where username=? and password=?";
+            User user = template.queryForObject(sql,new BeanPropertyRowMapper<User>(User.class),loginUser.getUsername(),loginUser.getPassword());
+            return  user;
+        }catch (DataAccessException e) {
+            e.printStackTrace();
+            return  null;
+        }
     }
 }
