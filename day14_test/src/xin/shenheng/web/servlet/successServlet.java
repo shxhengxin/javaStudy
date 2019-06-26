@@ -3,6 +3,7 @@ package xin.shenheng.web.servlet;
 import xin.shenheng.domain.User;
 
 import javax.servlet.ServletException;
+import javax.servlet.ServletOutputStream;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +16,9 @@ public class successServlet extends HttpServlet {
         User user = (User) request.getAttribute("user");
         if(user != null) {
             response.setContentType("text/html;charset=utf-8");
-
+            //response.setHeader("content-type","text/html;charset=utf-8");
+           // ServletOutputStream outputStream = response.getOutputStream();
+            //outputStream.write("你好".getBytes());
             response.getWriter().write("登录成功,"+ user.getUsername()+"欢迎你");
         }
 
