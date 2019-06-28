@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8098aebc-0092-4f17-94be-9081c5da8faa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xin/shenheng/dao/IUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xin/shenheng/dao/IUserDao.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8098aebc-0092-4f17-94be-9081c5da8faa" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/xin/shenheng/dao/IUserDao.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1364">
-              <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -68,9 +66,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="86" />
-    <option name="y" value="179" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="431" />
+    <option name="y" value="419" />
     <option name="width" value="1543" />
     <option name="height" value="1100" />
   </component>
@@ -178,7 +176,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561691248478" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561692373816" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -295,7 +293,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561626590319</updated>
-      <workItem from="1561626592579" duration="11012000" />
+      <workItem from="1561626592579" duration="11240000" />
     </task>
     <servers />
   </component>
@@ -332,11 +330,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11012000" />
+    <option name="totallyTimeSpent" value="11240000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="179" width="1543" height="1100" extended-state="1" />
-    <editor active="true" />
+    <frame x="431" y="419" width="1543" height="1100" extended-state="0" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -344,9 +341,9 @@
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.31490222" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3978422" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3006135" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3006135" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -464,7 +461,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/xin/shenheng/dao/IUserDao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1364">
-          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
         </state>
       </provider>
     </entry>
