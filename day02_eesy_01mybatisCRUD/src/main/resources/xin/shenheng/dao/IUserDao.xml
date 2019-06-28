@@ -3,6 +3,17 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="xin.shenheng.dao.IUserDao">
+
+    <!--<resultMap id="userMap" type="xin.shenheng.domain.User">
+        <id property="userId" column="id"></id>
+
+        <result property="userName" column="username"></result>
+        <result property="userAddress" column="address"></result>
+        <result property="userSex" column="sex"></result>
+        <result property="userBirthday" column="birthday"></result>
+    </resultMap>-->
+
+
     <!--配置查询所有-->
     <select id="findAll" resultType="xin.shenheng.domain.User">
         select * from user
@@ -36,8 +47,8 @@
         select  count(id) from user ;
     </select>
 
-
-    <select id="findUserByVo"  parameterType="xin.shenheng.domain.QueryVo" resultType="xin.shenheng.domain.User">
+    <!--resultType="xin.shenheng.domain.User"-->
+    <select id="findUserByVo"  parameterType="xin.shenheng.domain.QueryVo" resultType="xin.shenheng.domain.User"  resultMap="">
         select * from user where username like #{user.username};
     </select>
 </mapper>
