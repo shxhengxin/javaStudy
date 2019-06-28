@@ -8,6 +8,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import xin.shenheng.dao.IUserDao;
+import xin.shenheng.domain.QueryVo;
 import xin.shenheng.domain.User;
 
 import java.io.IOException;
@@ -61,10 +62,56 @@ public class MybatisTest {
         user.setSex("男");
         user.setBirthday(new Date());
 
+        userDao.saveUser(user);
 
+    }
 
-       userDao.saveUser(user);
+    @Test
+    public void  testUpdate(){
+        User user = new User();
+        user.setId(49);
+        user.setUsername("update update");
+        user.setAddress("北京市顺义区");
+        user.setSex("男");
+        user.setBirthday(new Date());
 
+        userDao.updateUser(user);
+
+    }
+
+    @Test
+    public void testDelete(){
+        userDao.deleteUser(49);
+
+    }
+
+    @Test
+    public void testFindOne(){
+        User user = userDao.findById(48);
+        System.out.println(user);
+
+    }
+
+    @Test
+    public void testFindByName(){
+        List<User> users = userDao.findByName("%王%");
+        System.out.println(users);
+
+    }
+    @Test
+    public void testFindTotal(){
+        int count = userDao.findTotal();
+        System.out.println(count);
+    }
+
+    @Test
+    public void testFindByVo(){
+        QueryVo vo = new QueryVo();
+        User user = new User();
+        user.setUsername("%王%");
+        vo.setUser(user);
+        List<User> users = userDao.findUserByVo(vo);
+        System.out.println(users);
 
     }
 
