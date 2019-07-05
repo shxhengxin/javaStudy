@@ -7,22 +7,23 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import xin.shenheng.dao.IAccountDao;
 import xin.shenheng.dao.IUserDao;
+import xin.shenheng.domain.Account;
+import xin.shenheng.domain.AccountUser;
 import xin.shenheng.domain.User;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.List;
 
-public class MybatisTest {
-
+public class UserTest {
     private InputStream in;
     private SqlSession session;
-    private IUserDao userDao;
+    private IUserDao iUserDao;
 
     @Before
-    public void init() throws IOException{
+    public void init() throws IOException {
         //读取配置文件
         in = Resources.getResourceAsStream("SqlMapConfig.xml");
 
@@ -32,7 +33,7 @@ public class MybatisTest {
         session = factory.openSession();
 
         //使用SqlSession创建Dao接口的代理对象
-        userDao = session.getMapper(IUserDao.class);
+        iUserDao = session.getMapper(IUserDao.class);
     }
     @After
     public void destroy() throws IOException {
@@ -41,33 +42,15 @@ public class MybatisTest {
         in.close();
     }
 
-
     @Test
-    public void  testFindAll()  {
-        //使用代理对象执行方法
-        List<User> users = userDao.findAll();
-
+    public void testFindAll(){
+        List<User> users = iUserDao.findAll();
         for (User user : users) {
+            System.out.println("========每个用户的信息=======");
             System.out.println(user);
+            System.out.println(user.getAccounts());
         }
 
     }
-
-
-    @Test
-    public void testFindOne(){
-        User user = userDao.findById(48);
-        System.out.println(user);
-
-    }
-
-
-
-
-
-
-
-
-
 
 }

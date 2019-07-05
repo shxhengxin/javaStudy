@@ -3,12 +3,28 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="xin.shenheng.dao.IUserDao">
+<!--定义user的resultMap-->
+<resultMap id="userAccountMap" type="user">
+    <id property="id" column="id"></id>
+    <result property="username" column="username"></result>
+    <result property="address" column="username"></result>
+    <result property="sex" column="sex"></result>
+    <result property="birthday" column="birthday"></result>
+    <!-- 配置user对象accounts集合映射 -->
+    <collection property="accounts"  ofType="xin.shenheng.domain.Account">
+        <id property="id" column="id"></id>
+        <result property="uid" column="uid"></result>
+        <result property="money" column="money"></result>
+    </collection>
+
+</resultMap>
+
 
 
 
     <!--配置查询所有-->
-    <select id="findAll" resultType="User">
-      select * from user
+    <select id="findAll" resultMap="userAccountMap">
+      SELECT u.*,a.money,a.uid FROM `user` u LEFT JOIN account a ON (u.id=a.uid)
     </select>
 
     <select id="findById" parameterType="java.lang.Integer" resultType="User">
