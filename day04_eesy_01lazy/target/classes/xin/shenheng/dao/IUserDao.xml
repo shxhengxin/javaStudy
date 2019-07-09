@@ -11,10 +11,13 @@
     <result property="sex" column="sex"></result>
     <result property="birthday" column="birthday"></result>
     <!-- 配置user对象accounts集合映射 -->
-    <collection property="accounts"  ofType="xin.shenheng.domain.Account">
+    <!--<collection property="accounts"  ofType="xin.shenheng.domain.Account">
         <id property="id" column="id"></id>
         <result property="uid" column="uid"></result>
         <result property="money" column="money"></result>
+    </collection>-->
+    <collection property="accounts" ofType="xin.shenheng.domain.Account" column="id" select="xin.shenheng.dao.IAccountDao.findAccountByUid">
+
     </collection>
 
 </resultMap>
@@ -24,7 +27,7 @@
 
     <!--配置查询所有-->
     <select id="findAll" resultMap="userAccountMap">
-      SELECT u.*,a.money,a.uid FROM `user` u LEFT JOIN account a ON (u.id=a.uid)
+      SELECT * FROM `user`;
     </select>
 
     <select id="findById" parameterType="java.lang.Integer" resultType="User">

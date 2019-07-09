@@ -42,11 +42,11 @@ public class UserTest {
     @Test
     public void testFindAll(){
         List<User> users = iUserDao.findAll();
-        for (User user : users) {
-            System.out.println("========每个用户的信息=======");
-            System.out.println(user);
-            System.out.println(user.getAccounts());
-        }
+        //for (User user : users) {
+        //    System.out.println("========每个用户的信息=======");
+        //    System.out.println(user);
+            //System.out.println(user.getAccounts());
+        //}
 
     }
 

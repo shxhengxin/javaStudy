@@ -29,6 +29,12 @@
       select * from account;
     </select>
 
+    <select id="findAccountByUid" parameterType="java.lang.Integer" resultType="xin.shenheng.domain.Account">
+        select * from account where uid=#{uid}
+    </select>
+
+
+
 
 
 </mapper>
