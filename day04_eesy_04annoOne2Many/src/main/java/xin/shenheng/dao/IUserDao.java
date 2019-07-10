@@ -1,6 +1,7 @@
 package xin.shenheng.dao;
 
 import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.mapping.FetchType;
 import xin.shenheng.domain.User;
 
 import java.util.List;
@@ -16,7 +17,8 @@ public interface IUserDao {
             @Result(column = "username",property = "userName"),
             @Result(column = "address",property = "userAddress"),
             @Result(column = "sex",property = "userSex"),
-            @Result(column = "birthday",property = "userBirthday")
+            @Result(column = "birthday",property = "userBirthday"),
+            @Result(property = "accounts",column = "id",many = @Many(select = "xin.shenheng.dao.IAccountDao.findAccountByUid",fetchType = FetchType.LAZY))
     })
     List<User> findAll();
 
