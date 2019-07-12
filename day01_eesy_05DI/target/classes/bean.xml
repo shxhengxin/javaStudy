@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--构造函数注入:
+        使用的标签:constructor-arg
+            type 用于指定注入的数据的数据类型，该数据类型也是构造函数中某个或某些参数的类型
+            index 用于指定要注入的数据给函数中指定索引位置的参数赋值，索引的位置是从0开始
+            name 用于指定给构造函数中指定名称参数赋值
+            value 用于给基本类型和String类型的数据
+            ref 用于指定其他的Bean类型数据  它指的就是在ioc容器中出现的bean对象
+    -->
+    <bean id="accountService" class="xin.shenheng.service.impl.AccountServiceImpl" >
+        <constructor-arg name="name" value="test"></constructor-arg>
+        <constructor-arg name="age" value="18"></constructor-arg>
+        <constructor-arg name="birthday" ref="now"></constructor-arg>
+    </bean>
+
+    <!--配置一个日期对象-->
+    <bean id="now" class="java.util.Date"></bean>
+
+
+
+    <!--set方法注入
+        property:
+            name: 用于指定注入时所调用的set方法名称
+            value 用于给基本类型和String类型的数据
+            ref 用于指定其他的Bean类型数据  它指的就是在ioc容器中出现的bean对象
+    -->
+
+    <bean id="accountService2" class="xin.shenheng.service.impl.AccountServiceImpl2" >
+        <property name="name" value="test1"></property>
+        <property name="age" value="21"></property>
+        <property name="birthday" ref="now"></property>
+    </bean>
+
+
+    <!--复杂类型的注入/集合类型的注入-->
+
+    <bean id="accountService3" class="xin.shenheng.service.impl.AccountServiceImpl3" >
+        <property name="myStrs">
+            <array>
+                <value>aaa</value>
+                <value>bbb</value>
+                <value>ccc</value>
+            </array>
+        </property>
+        <property name="myList">
+            <list>
+                <value>aaa</value>
+                <value>bbb</value>
+            </list>
+        </property>
+        <property name="mySet">
+            <set>
+                <value>aaa</value>
+            </set>
+        </property>
+
+        <property name="myMap">
+            <map>
+                <entry key="a" >
+                    <value>111</value>
+                </entry>
+                <entry key="b" value="222"></entry>
+            </map>
+        </property>
+
+        <property name="myProps">
+            <props>
+                <prop key="qqq">123</prop>
+                <prop key="qqw">111</prop>
+            </props>
+        </property>
+
+    </bean>
+</beans>
