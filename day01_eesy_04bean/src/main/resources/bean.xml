@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--把对象的创建交给spring来管理-->
+    <!--spring 对bean的管理细节
+    1.创建bean的三种方式
+    2.bean对象的作用范围
+    3.bean对象的生命周期
+    -->
+    <!--<bean id="accountService" class="xin.shenheng.service.impl.AccountServiceImpl" ></bean>-->
+
+
+    <!--<bean id="instanceFactory" class="xin.shenheng.service.factory.InstanceFactory"></bean>
+    <bean id="accountService" factory-bean="instanceFactory" factory-method="getAccountService" ></bean>-->
+
+    <!--<bean id="accountService" class="xin.shenheng.service.factory.StaticFactory" factory-method="getAccountService"></bean>-->
+
+    <!--
+
+    bean 的作用范围调整：
+      bean标签的scope 属性：
+      取值 ： singleton 单例（默认值）
+              prototype:多例
+              request:
+              session:
+              global-session:
+
+    -->
+    <bean id="accountService" class="xin.shenheng.service.factory.StaticFactory" factory-method="getAccountService" scope="singleton"></bean>
+
+</beans>
