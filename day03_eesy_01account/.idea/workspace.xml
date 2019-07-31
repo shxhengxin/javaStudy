@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b72e43de-6f25-4bf4-b789-ddbafe99744a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_ioc/src/main/java/xin/shenheng/dao/IAccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_ioc/src/main/java/xin/shenheng/dao/impl/AccountDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_ioc/src/main/java/xin/shenheng/service/IAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_ioc/src/main/java/xin/shenheng/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_ioc/src/main/java/xin/shenheng/ui/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day02_eesy_01anno_ioc/src/main/resources/bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xin/shenheng/dao/IAccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xin/shenheng/dao/Impl/AccountDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xin/shenheng/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xin/shenheng/service/IAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xin/shenheng/service/Impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xin/shenheng/utils/ConnectionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xin/shenheng/utils/TransactionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/xin/shenheng/test/AccounServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day01_eesy_05DI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day01_eesy_05DI/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xin/shenheng/factory/BeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xin/shenheng/service/Impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xin/shenheng/service/Impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/xin/shenheng/test/AccounServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/xin/shenheng/test/AccounServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day03_eesy_02proxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day03_eesy_02proxy/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,14 +20,12 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/xin/shenheng/service/Impl/AccountServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/xin/shenheng/test/AccounServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="121" column="29" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
+            <state relative-caret-position="589">
+              <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,11 +51,12 @@
         <option value="$PROJECT_DIR$/src/main/java/xin/shenheng/domain/Account.java" />
         <option value="$PROJECT_DIR$/src/main/java/xin/shenheng/dao/IAccountDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/xin/shenheng/service/IAccountService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/xin/shenheng/test/AccounServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/xin/shenheng/utils/ConnectionUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/xin/shenheng/utils/TransactionManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/xin/shenheng/dao/Impl/AccountDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/bean.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/xin/shenheng/factory/BeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/xin/shenheng/test/AccounServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/xin/shenheng/service/Impl/AccountServiceImpl.java" />
       </list>
     </option>
@@ -80,8 +69,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="832" />
-    <option name="y" value="117" />
+    <option name="x" value="47" />
+    <option name="y" value="825" />
     <option name="width" value="1727" />
     <option name="height" value="883" />
   </component>
@@ -91,6 +80,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,7 +140,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shenheng" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="day03_eesy_01account" type="b2602c69:ProjectViewProjectNode" />
@@ -212,14 +202,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563953238520" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564544551854" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -271,6 +260,7 @@
       <updated>1563520572374</updated>
       <workItem from="1563520574828" duration="15318000" />
       <workItem from="1563953638390" duration="39000" />
+      <workItem from="1564479569543" duration="6614000" />
     </task>
     <servers />
   </component>
@@ -290,14 +280,24 @@
     <history-entry file="AccounServiceTest_testTransfer - 2019.07.24 at 15h 21m 37s.xml">
       <configuration name="AccounServiceTest.testTransfer" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AccounServiceTest_testTransfer - 2019.07.31 at 11h 39m 39s.xml">
+      <configuration name="AccounServiceTest.testTransfer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccounServiceTest_testTransfer - 2019.07.31 at 11h 40m 15s.xml">
+      <configuration name="AccounServiceTest.testTransfer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccounServiceTest_testTransfer - 2019.07.31 at 11h 41m 29s.xml">
+      <configuration name="AccounServiceTest.testTransfer" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15357000" />
+    <option name="totallyTimeSpent" value="21971000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="832" y="117" width="1727" height="883" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20875825" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21108742" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -306,7 +306,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298292" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.506424" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -365,13 +365,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.sql/javax/sql/DataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.12.RELEASE/spring-test-5.0.12.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-465">
@@ -379,33 +372,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xin/shenheng/utils/TransactionManager.java">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.sql/javax/sql/DataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xin/shenheng/dao/Impl/AccountDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="94">
+          <caret line="98" column="16" lean-forward="true" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xin/shenheng/utils/ConnectionUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        <state relative-caret-position="241">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#218#230#0" expanded="true" />
@@ -417,12 +394,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xin/shenheng/service/IAccountService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/xin/shenheng/utils/TransactionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+        <state relative-caret-position="747">
+          <caret line="55" column="29" lean-forward="true" selection-start-line="53" selection-start-column="10" selection-end-line="55" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#beginTransaction#0;class#TransactionManager#0" />
+            <element signature="method#commit#0;class#TransactionManager#0" />
+            <element signature="method#rollback#0;class#TransactionManager#0" />
           </folding>
         </state>
       </provider>
@@ -436,31 +415,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/bean.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="50" column="39" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="39" />
+        <state relative-caret-position="186">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/xin/shenheng/test/AccounServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/xin/shenheng/service/IAccountService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="398">
+          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xin/shenheng/factory/BeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xin/shenheng/dao/Impl/AccountDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1337">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xin/shenheng/service/Impl/AccountServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="121" column="29" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
+        <state relative-caret-position="320">
+          <caret line="114" column="12" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/xin/shenheng/test/AccounServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

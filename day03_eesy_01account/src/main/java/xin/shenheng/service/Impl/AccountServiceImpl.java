@@ -11,11 +11,11 @@ import java.util.List;
 public class AccountServiceImpl implements IAccountService {
 
     private IAccountDao accountDao;
-    private TransactionManager txManager;
+    //private TransactionManager txManager;
 
-    public void setTxManager(TransactionManager txManager) {
+    /*public void setTxManager(TransactionManager txManager) {
         this.txManager = txManager;
-    }
+    }*/
 
     public void  setAccountDao(IAccountDao accountDao) {
         this.accountDao = accountDao;
@@ -24,83 +24,83 @@ public class AccountServiceImpl implements IAccountService {
 
 
     public List<Account> findAllAccount() {
-        try{
-            txManager.beginTransaction();
+        //try{
+           // txManager.beginTransaction();
             List<Account> accounts = accountDao.findAllAccount();
-            txManager.commit();
+           // txManager.commit();
             return accounts;
 
-        }catch (Exception e){
-            txManager.rollback();
-            throw new RuntimeException(e);
-        }finally {
-            txManager.release();
-        }
+        //}catch (Exception e){
+           // txManager.rollback();
+           // throw new RuntimeException(e);
+       // }finally {
+        //    txManager.release();
+      //  }
 
     }
 
     public Account findAccountById(Integer accountId) {
-        try{
-            txManager.beginTransaction();
+        //try{
+           // txManager.beginTransaction();
             Account account =  accountDao.findAccountById(accountId);
-            txManager.commit();
+           // txManager.commit();
             return account;
-        }catch (Exception e){
-            txManager.rollback();
-            throw new RuntimeException(e);
-        }finally {
-            txManager.release();
-        }
+        //}catch (Exception e){
+           // txManager.rollback();
+           // throw new RuntimeException(e);
+        //}finally {
+          //  txManager.release();
+        //}
     }
 
     public void saveAccount(Account account) {
-        try{
-            txManager.beginTransaction();
+        //try{
+           // txManager.beginTransaction();
             accountDao.saveAccount(account);
-            txManager.commit();
+          //  txManager.commit();
 
-        }catch (Exception e){
-            txManager.rollback();
-            throw new RuntimeException(e);
-        }finally {
-            txManager.release();
-        }
+      //  }catch (Exception e){
+          //  txManager.rollback();
+         //   throw new RuntimeException(e);
+      //  }finally {
+         //   txManager.release();
+       // }
 
     }
 
     public void updateAccount(Account account) {
 
-        try{
-            txManager.beginTransaction();
+        //try{
+          //  txManager.beginTransaction();
             accountDao.updateAccount(account);
-            txManager.commit();
+         //   txManager.commit();
 
-        }catch (Exception e){
-            txManager.rollback();
-            throw new RuntimeException(e);
-        }finally {
-            txManager.release();
-        }
+        //}catch (Exception e){
+         //   txManager.rollback();
+        //    throw new RuntimeException(e);
+       // }finally {
+        //    txManager.release();
+       // }
     }
 
     public void deleteAccount(Integer acccountId) {
 
-        try{
-            txManager.beginTransaction();
+        //try{
+           // txManager.beginTransaction();
             accountDao.deleteAccount(acccountId);
-            txManager.commit();
+            //txManager.commit();
 
-        }catch (Exception e){
+        /*}catch (Exception e){
             txManager.rollback();
             throw new RuntimeException(e);
         }finally {
             txManager.release();
-        }
+        }*/
     }
 
     public void transfer(String sourceName, String targetName, Float money) {
-        try {
-            txManager.beginTransaction();
+        //try {
+            //txManager.beginTransaction();
             //2.1根据名称查询转出账户
             Account source = accountDao.findAccountByName(sourceName);
             //2.2根据名称查询转入账户
@@ -116,12 +116,12 @@ public class AccountServiceImpl implements IAccountService {
 
             //2.6更新转入账户
             accountDao.updateAccount(target);
-            txManager.commit();
+         /*   txManager.commit();
         }catch (Exception e){
             txManager.rollback();
             e.printStackTrace();
         }finally {
             txManager.release();
-        }
+        }*/
     }
 }
