@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+        <!--配置spring的Ioc把service对象配置进来-->
+    <bean id="accountService" class="xin.shenheng.service.impl.AccountServiceImpl"></bean>
+
+    <!--spring 中基于XML的AOP配置步骤
+    <1. 把通知bean也给spring来管理
+    <2. 使用apo:config标签表明开始aop配置
+    <3. 使用apo:aspect标签表明配置切面
+        <3.1 id属性:给切面提供一个唯一的标识
+        <3.2 ref属性:指定通知类bean的id
+    <4. 在apo:aspect标签表的内部使用对应标签来配置通知的类型
+        <4.1 aop：before:表示配置前置通知
+            <4.1.1 method属性用于指定logger类中哪个方法是前置通知
+            <4.1.2 pointcut用于键入点表达式，该表达式的含义指的是对业务层中哪些方法增强
+    -->
+
+    <!--配置logger类-->
+    <bean id="logger" class="xin.shenheng.utils.Logger"></bean>
+    <!--配置aop-->
+    <aop:config>
+        <aop:aspect id="logAdvice" ref="logger">
+            <aop:before method="printLog" pointcut="execution(public void xin.shenheng.service.impl.AccountServiceImpl.saveAccount())"></aop:before>
+        </aop:aspect>
+    </aop:config>
+</beans>
