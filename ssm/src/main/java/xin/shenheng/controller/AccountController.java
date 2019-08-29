@@ -20,7 +20,7 @@ public class AccountController {
 
         System.out.println("findAll执行了....");
         List<Account> list = accountService.findAll();
-        System.out.println(list);
+        //System.out.println(list);
 
         return "list";
     }
