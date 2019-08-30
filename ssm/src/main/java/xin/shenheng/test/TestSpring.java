@@ -3,7 +3,10 @@ package xin.shenheng.test;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import xin.shenheng.domain.Account;
 import xin.shenheng.service.AccountService;
+
+import java.util.List;
 
 public class TestSpring {
     @Test
@@ -15,4 +18,5 @@ public class TestSpring {
         as.findAll();
 
     }
+
 }
